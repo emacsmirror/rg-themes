@@ -39,6 +39,7 @@
         (grey-1 . "#dbcdd9")
         (grey-2 . "#bdafbb")
         (grey-3 . "#9e919c")
+        (grey-4 . "#847882")
 
         (makeup-powder       . "#d3899b")
         (kiss                . "#fbd8f7")
@@ -100,8 +101,8 @@
 
         (built-in            . kiss-darkened-twice)
         (preprocessor        . kiss-darkened-twice)
-        (comment             . grey-2)
-        (comment-delimiter   . grey-3)
+        (comment             . grey-4)
+        (comment-delimiter   . grey-4)
         ;; (comment-doc         . )
         ;; (comment-doc-markup  . )
         ;; (punctuation         . )
