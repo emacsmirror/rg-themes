@@ -87,89 +87,89 @@ first matching name."
    `(region ((t (:background ,(rg-themes--colour palette 'region)))))
    `(fringe ((t (:background ,(rg-themes--colour palette 'fringe 'background)))))
    `(vertical-border ((t (:foreground ,(rg-themes--colour palette
-                                                 'window-border
-                                                 'background-accent-strong)))))
+                                                          'window-border
+                                                          'background-accent-strong)))))
    `(trailing-whitespace ((t (:background ,(rg-themes--colour palette
-                                                     'trailing-whitespace
-                                                     'red)))))
+                                                              'trailing-whitespace
+                                                              'red)))))
 
    `(line-number              ((t (:foreground ,(rg-themes--colour palette
-                                                          'line-number
-                                                          'grey-neutral)))))
+                                                                   'line-number
+                                                                   'grey-neutral)))))
    `(line-number-current-line ((t (:foreground ,(rg-themes--colour palette
-                                                          'current-line-number
-                                                          'grey-accent)))))
+                                                                   'current-line-number
+                                                                   'grey-accent)))))
 
    `(highlight           ((t (:background ,(rg-themes--colour palette
-                                                     'primary-highlight
-                                                     'background-accent-medium)))))
+                                                              'primary-highlight
+                                                              'background-accent-medium)))))
    `(secondary-selection ((t (:background ,(rg-themes--colour palette
-                                                     'secondary-highlight
-                                                     'background-accent-light) ))))
+                                                              'secondary-highlight
+                                                              'background-accent-light) ))))
 
    `(mode-line          ((t (:foreground ,(rg-themes--colour palette
-                                                    'mode-line-foreground
-                                                    'foreground)
-                                         :background ,(rg-themes--colour palette
-                                                                'mode-line-background
-                                                                'background-accent-medium)
-                                         :box (:line-width ,rg-themes-modeline-padding
-                                                           :color ,(rg-themes--colour palette
-                                                                             'mode-line-background
-                                                                             'background-accent-medium)
-                                                           :style nil)))))
+                                                             'mode-line-foreground
+                                                             'foreground)
+                             :background ,(rg-themes--colour palette
+                                                             'mode-line-background
+                                                             'background-accent-medium)
+                             :box (:line-width ,rg-themes-modeline-padding
+                                   :color ,(rg-themes--colour palette
+                                                              'mode-line-background
+                                                              'background-accent-medium)
+                                   :style nil)))))
    `(mode-line-inactive ((t (:foreground ,(rg-themes--colour palette
-                                                    'mode-line-inactive-foreground
-                                                    'foreground)
-                                         :background ,(rg-themes--colour palette
-                                                                'mode-line-inactive-background
-                                                                'background-accent-light)
-                                         :box (:line-width ,rg-themes-modeline-padding
-                                                           :color ,(rg-themes--colour palette
-                                                                             'mode-line-inactive-background
-                                                                             'background-accent-light)
-                                                           :style nil)))))
+                                                             'mode-line-inactive-foreground
+                                                             'foreground)
+                             :background ,(rg-themes--colour palette
+                                                             'mode-line-inactive-background
+                                                             'background-accent-light)
+                             :box (:line-width ,rg-themes-modeline-padding
+                                   :color ,(rg-themes--colour palette
+                                                              'mode-line-inactive-background
+                                                              'background-accent-light)
+                                   :style nil)))))
    `(mode-line-buffer-id ((t (:foreground ,(rg-themes--colour palette
                                                      'buffer-name
                                                      'accent-medium)
-                                          :bold t))))
+                              :bold t))))
 
    `(ansi-color-black   ((t (:foreground ,(rg-themes--colour palette 'black)
-                                         :background ,(rg-themes--colour palette 'black)))))
+                             :background ,(rg-themes--colour palette 'black)))))
    `(ansi-color-white   ((t (:foreground ,(rg-themes--colour palette 'white)
-                                         :background ,(rg-themes--colour palette 'white)))))
+                             :background ,(rg-themes--colour palette 'white)))))
    `(ansi-color-red     ((t (:foreground ,(rg-themes--colour palette 'red)
-                                         :background ,(rg-themes--colour palette 'red)))))
+                             :background ,(rg-themes--colour palette 'red)))))
    `(ansi-color-green   ((t (:foreground ,(rg-themes--colour palette 'green)
-                                         :background ,(rg-themes--colour palette 'green)))))
+                             :background ,(rg-themes--colour palette 'green)))))
    `(ansi-color-yellow  ((t (:foreground ,(rg-themes--colour palette 'yellow)
-                                         :background ,(rg-themes--colour palette 'yellow)))))
+                             :background ,(rg-themes--colour palette 'yellow)))))
    `(ansi-color-blue    ((t (:foreground ,(rg-themes--colour palette 'blue)
-                                         :background ,(rg-themes--colour palette 'blue)))))
+                             :background ,(rg-themes--colour palette 'blue)))))
    `(ansi-color-magenta ((t (:foreground ,(rg-themes--colour palette 'magenta)
-                                         :background ,(rg-themes--colour palette 'magenta)))))
+                             :background ,(rg-themes--colour palette 'magenta)))))
    `(ansi-color-cyan    ((t (:foreground ,(rg-themes--colour palette 'cyan)
-                                         :background ,(rg-themes--colour palette 'cyan)))))
+                             :background ,(rg-themes--colour palette 'cyan)))))
 
    `(success ((t (:foreground ,(rg-themes--colour palette 'success 'green)
-                              :weight bold))))
+                  :weight bold))))
    `(warning ((t (:foreground ,(rg-themes--colour palette 'warning 'red)
-                              :weight bold))))
+                  :weight bold))))
 
    `(font-lock-builtin-face           ((t (:foreground ,(rg-themes--colour palette 'built-in)
-                                                       :bold t))))
+                                           :bold t))))
    `(font-lock-preprocessor-face      ((t (:foreground ,(rg-themes--colour palette 'preprocessor)
-                                                       :bold t))))
+                                           :bold t))))
    `(font-lock-comment-face           ((t (:foreground ,(rg-themes--colour palette 'comment)
-                                                       :slant italic))))
+                                           :slant italic))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,(rg-themes--colour palette 'comment-delimiter)
-                                                       :slant italic))))
+                                           :slant italic))))
    `(font-lock-doc-face               ((t (:foreground ,(rg-themes--colour palette 'comment-doc)))))
    `(font-lock-doc-markup-face        ((t (:foreground ,(rg-themes--colour palette 'comment-doc-markup)))))
    `(font-lock-punctuation-face       ((t (:foreground ,(rg-themes--colour palette 'punctuation)))))
    `(font-lock-type-face              ((t (:foreground ,(rg-themes--colour palette 'type)))))
    `(font-lock-function-name-face     ((t (:foreground ,(rg-themes--colour palette 'function-name)
-                                                       :bold t))))
+                                           :bold t))))
    `(font-lock-variable-name-face     ((t (:foreground ,(rg-themes--colour palette 'variable-name)))))
    `(font-lock-keyword-face           ((t (:foreground ,(rg-themes--colour palette 'keyword)))))
    `(font-lock-string-face            ((t (:foreground ,(rg-themes--colour palette 'string)))))
@@ -179,24 +179,26 @@ first matching name."
    `(font-lock-constant-face          ((t (:foreground ,(rg-themes--colour palette 'constant)))))
    `(font-lock-regexp-face            ((t (:foreground ,(rg-themes--colour palette 'regexp)))))
    `(font-lock-warning-face           ((t (:foreground ,(rg-themes--colour palette 'stand-out)
-                                                       :bold t))))
+                                           :bold t))))
 
    `(minibuffer-prompt ((t (:foreground ,(rg-themes--colour palette
-                                                   'minibuffer-prompt
-                                                   'accent-strong)
-                                        :bold t))))
+                                                            'minibuffer-prompt
+                                                            'accent-strong)
+                            :bold t))))
 
    `(italic ((t (:slant italic :underline nil))))
 
    `(match ((t nil)))
    `(show-paren-match ((t (:inverse-video t))))
 
-   `(link ((t (:foreground ,(rg-themes--colour palette 'link-foreground 'grey-neutral)
-                           :underline t))))
+   `(link ((t (:foreground ,(rg-themes--colour palette
+                                               'link-foreground
+                                               'grey-neutral)
+               :underline t))))
 
    `(hl-line ((t (:background ,(rg-themes--colour palette
-                                         'current-line-background
-                                         'background-accent-light)))))
+                                                  'current-line-background
+                                                  'background-accent-light)))))
    ))
 
 (defun rg-themes ()
