@@ -71,6 +71,9 @@
         (background-accent-medium . athens-sculpture-1)
         (background-accent-light  . athens-sculpture-2)
 
+        (mode-line-background          . athens-sculpture-1)
+        (mode-line-inactive-background . athens-sculpture-2)
+
         (accent-strong . sky-blue-athens)
         (accent-medium . ellas-blue)
 
