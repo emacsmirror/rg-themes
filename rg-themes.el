@@ -34,8 +34,8 @@
 
 (require 'cl-lib)
 
-(defvar rg-themes-light-themes '(ellas))
-(defvar rg-themes-dark-themes '(cappuccino-noir somnus purpurina))
+(defconst rg-themes-light-themes '(ellas cappuccino-bianco))
+(defconst rg-themes-dark-themes '(cappuccino-noir somnus purpurina))
 
 (defgroup rg-themes ()
   "Options that apply to all themes in the rg collection."
@@ -198,8 +198,7 @@ first matching name."
 
    `(hl-line ((t (:background ,(rg-themes--colour palette
                                                   'current-line-background
-                                                  'background-accent-light)))))
-   ))
+                                                  'background-accent-light)))))))
 
 (defun rg-themes ()
   "Get all available rg themes."
