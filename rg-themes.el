@@ -34,7 +34,7 @@
 
 (require 'cl-lib)
 
-(defconst rg-themes-light-themes '(ellas cappuccino-bianco))
+(defconst rg-themes-light-themes '(ellas))
 (defconst rg-themes-dark-themes '(cappuccino-noir somnus purpurina))
 
 (defgroup rg-themes ()
