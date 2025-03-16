@@ -209,25 +209,6 @@ first matching name."
 (defvar rg-themes-after-theme-load-hook nil
   "Hook that is run after an rg theme has loaded.")
 
-;;;###autoload
-(defun rg-themes-set (theme &optional dont-disable-rest)
-  "Set the current theme to THEME.
-
-By default, this function disables all loaded themes before
-applying the new one. The argument DONT-DISABLE-REST, when non
-nil, inhibits this behaviour."
-  (interactive
-   (list
-    (intern (completing-read "Theme: " (rg-themes)))))
-
-  (unless dont-disable-rest
-    (dolist (enabled-theme custom-enabled-themes)
-      (disable-theme enabled-theme)))
-
-  (load-theme theme t)
-
-  (run-hooks 'rg-themes-after-theme-load-hook))
-
 (defun rg-themes-spacious-frame-style-tweaks ()
   "Apply the stylistic tweaks that make the frame sleek."
   (when rg-themes-spacious-frame
@@ -245,8 +226,25 @@ nil, inhibits this behaviour."
       (set-face-attribute 'window-divider-last-pixel nil
                           :foreground bg))))
 
-(add-hook 'rg-themes-after-theme-load-hook
-          'rg-themes-spacious-frame-style-tweaks)
+;;;###autoload
+(defun rg-themes-set (theme &optional dont-disable-rest)
+  "Set the current theme to THEME.
+
+By default, this function disables all loaded themes before
+applying the new one. The argument DONT-DISABLE-REST, when non
+nil, inhibits this behaviour."
+  (interactive
+   (list
+    (intern (completing-read "Theme: " (rg-themes)))))
+
+  (unless dont-disable-rest
+    (dolist (enabled-theme custom-enabled-themes)
+      (disable-theme enabled-theme)))
+
+  (load-theme theme t)
+
+  (rg-themes-spacious-frame-style-tweaks)
+  (run-hooks 'rg-themes-after-theme-load-hook))
 
 ;; Add rg themes to Emacs' load path
 ;;;###autoload
