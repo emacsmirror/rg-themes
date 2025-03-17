@@ -121,7 +121,7 @@
   :background-mode 'light
   :family 'rg)
 
-(rg-themes-apply-palette-for 'ellas 'rg-themes-ellas-palette)
+(rg-themes-apply-palette-for 'rg-themes-ellas 'rg-themes-ellas-palette)
 
 (provide-theme 'rg-themes-ellas)
 
