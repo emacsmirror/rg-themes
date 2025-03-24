@@ -47,8 +47,10 @@
 
 (require 'cl-lib)
 
-(defconst rg-themes-light-themes '(ellas))
-(defconst rg-themes-dark-themes '(cappuccino-noir somnus purpurina))
+(defconst rg-themes-light-themes '(rg-themes-ellas))
+(defconst rg-themes-dark-themes '(rg-themes-cappuccino-noir
+                                  rg-themes-somnus
+                                  rg-themes-purpurina))
 
 (defgroup rg-themes ()
   "Options that apply to all themes in the rg collection."
