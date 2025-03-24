@@ -1,18 +1,22 @@
 #+title: rg theme collection
 
+#+begin_export html
+<a href="https://melpa.org/#/rg-themes"><img alt="MELPA" src="https://melpa.org/packages/rg-themes-badge.svg" /></a>
+#+end_export
+
 This is a collection of all the Emacs themes I have created.
 
 https://gligan.net/emacs-themes
 
 ** Installation
 
-With Emacs 30 or higher, you can directly pull the files from this
-repository:
+This package is available in MELPA:
 
 #+begin_src elisp
 (use-package rg-themes
-  :vc (:url "https://github.com/raegnald/rg-themes"
-       :branch "main"))
+  :ensure t
+  :config
+  (rg-themes-set 'rg-themes-ellas))
 #+end_src
 
 Otherwise, just clone this repo into your Emacs folder.
@@ -27,7 +31,7 @@ your Emacs configuration.
 Let's say that you liked the Ellas theme, then you would add:
 
 #+begin_src elisp
-(rg-themes-set 'ellas)
+(rg-themes-set 'rg-themes-ellas)
 #+end_src
 
 Note that the function =rg-themes-set= can work with any theme -- even
@@ -35,12 +39,26 @@ themes that are not part of this collection. Use this function if you
 want other functionality of this package to work, like
 =rg-themes-spacious-frame= for instance.
 
+All functions and symbols from this package are prefixed by =rg-themes=.
+
 ** Themes
 *** Ellas
+Ellas is light Emacs theme inspired by the colours of Greece.
+
 [[https://gligan.net/ellas.png]]
+
 *** Somnus
+Somnus is a theme to focus and not to strain your eyes during a late
+night software development session.
+
 [[https://gligan.net/somnus.png]]
+
 *** Cappuccino noir
+A night theme that feels like morning cup of coffee.
+
 [[https://gligan.net/cappuccino-noir.png]]
+
 *** Purpurina
+A glamorous theme for your nocturnal needs.
+
 [[https://gligan.net/purpurina.png]]
