@@ -1,8 +1,6 @@
 #+title: rg theme collection
 
-#+begin_export html
-<a href="https://melpa.org/#/rg-themes"><img alt="MELPA" src="https://melpa.org/packages/rg-themes-badge.svg" /></a>
-#+end_export
+#+html: <a href="https://melpa.org/#/rg-themes"><img alt="MELPA" src="https://melpa.org/packages/rg-themes-badge.svg" /></a>
 
 This is a collection of all the Emacs themes I have created.
 
