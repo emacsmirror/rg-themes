@@ -47,8 +47,7 @@
 
 (require 'cl-lib)
 
-(defconst rg-themes-light-themes '(rg-themes-ellas
-                                   rg-themes-orquidea))
+(defconst rg-themes-light-themes '(rg-themes-ellas))
 (defconst rg-themes-dark-themes '(rg-themes-cappuccino-noir
                                   rg-themes-somnus
                                   rg-themes-purpurina
