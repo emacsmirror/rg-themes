@@ -4,8 +4,6 @@
 
 This is a collection of all the Emacs themes I have created.
 
-https://gligan.net/emacs-themes
-
 ** Installation
 
 This package is available in MELPA:
@@ -60,3 +58,8 @@ A night theme that feels like morning cup of coffee.
 A glamorous theme for your nocturnal needs.
 
 [[https://gligan.net/purpurina.png]]
+
+*** Bosque
+A night walk through the forest.
+
+https://gligan.net/bosque.png
