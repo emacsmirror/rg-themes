@@ -62,4 +62,4 @@ A glamorous theme for your nocturnal needs.
 *** Bosque
 A night walk through the forest.
 
-https://gligan.net/bosque.png
+[[https://gligan.net/bosque.png]]
